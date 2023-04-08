@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+
+
+
+<bean class="company.hibernate.spring.dto.Ceo"  id="ceo">
+<property name="ceoId" value="101"></property>
+<property name="ceoName" value="RajuSir"></property>
+<property name="salary" value="20000"></property>
+
+</bean>
+	
+	<context:component-scan base-package="company.hibernate.spring.dto"></context:component-scan>
+</beans>
